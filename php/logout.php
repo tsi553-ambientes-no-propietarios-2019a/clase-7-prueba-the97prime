@@ -3,4 +3,4 @@ include('../common/utils.php');
 
 session_destroy();
 
-redirect('../index.php');
+redirect('../Adios_salir.php');
