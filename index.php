@@ -12,8 +12,8 @@ include('common/utils.php')
 
     <form action="php/process_login.php" method="post">
         <h2>Iniciar sesión</h2>
-        <input type="text" name="username" placeholder="Usuario">
-        <input type="password" name="password" placeholder="Clave">
+        Nombre:<input type="text" name="username" placeholder="Usuario">
+        Contraseña:<input type="password" name="password" placeholder="Clave">
         <button>Ingresar</button>
     </form>
     <a href="registro_tienda.php">Registrar mi tienda</a>

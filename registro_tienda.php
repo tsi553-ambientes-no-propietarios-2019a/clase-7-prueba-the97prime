@@ -18,12 +18,12 @@ if($_GET) {
 	<div><strong><?php echo $error_message; ?></strong></div>
 <?php } ?>
 	<form action="php/process_registration.php" method="post">
-		<input type="text" name="Nombre_de_Tienda">
-        <input type="text"
+		Nombre de la tienda:<input type="text" name="Nombre_de_Tienda">
+        Clave:<input type="text"
         name="Usuario">
         <input type="password"
         name="Clave">
-        <input type="text" name="Repetir clave">
+        Repetir Clave:<input type="password" name="Repetir clave">
 		<button>Registrar</button>
 	</form>
 </body>

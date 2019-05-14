@@ -18,16 +18,16 @@ if($_GET) {
 	<div><strong><?php echo $error_message; ?></strong></div>
 <?php } ?>
 	<form action="php/process_registration_producto.php" method="post">
-		<input type="text" name="codigo">
-        <input type="text"
+		Codigo:<input type="text" name="codigo">
+        Nombre:<input type="text"
         name="nombre">
-        <select name="tipo">
-  <option value="alimento">Alimento 1</option> 
+        Tipo:<select name="tipo">
+  <option value="alimento">Alimento </option> 
   <option value="vestimenta" selected>Vestimenta</option>
   <option value="salud">Salud</option>
 </select>
-        <input type="text" name="cantidad_stock">
-        <input type="text" name="precio">
+        Cantidad:<input type="text" name="cantidad_stock">
+        Precio:<input type="text" name="precio">
 		<button>Registrar</button>
 	</form>
 </body>
