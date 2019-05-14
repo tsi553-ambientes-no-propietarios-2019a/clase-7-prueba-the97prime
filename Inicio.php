@@ -17,8 +17,28 @@ include('common/utils.php');
 
     <h3>Productos de la tienda</h3>
     
+    <?php
+mysql_connect ("localhost", "root", "");
+mysql_select_db ("pruebab1");
+$consulta= "SELECT * FROM productos";
+mysql_query ($consulta);
+?>
     
-    
+<?php
+while ($fila=mysql_fetch_array($consulta)){
+echo "<p>";
+echo "-"; 
+echo $fila ("codigo");
+echo "-"; 
+echo $fila ("nombre");
+echo "-"; 
+echo $fila ("tipo");
+echo "-";    
+echo $fila ("cantidad");
+echo "-"; 
+echo $fila ("precio");   
+echo "<p>";
+?>
     <div><a href="nuevo_producto.php">Registrar nuevo producto</a>
     </div>
 	<div><a href="php/logout.php">Cerrar sesión</a></div>
