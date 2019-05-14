@@ -27,7 +27,7 @@ if($_POST) {
 		if ($conn->error) {
 			echo 'Ocurrió un error ' . $conn->error;
 		} else {
-			redirect('../Inicio.php');
+			redirect('../producto_registrado_OK.php');
 		}
 	} else {
 		header('Location: ../nuevo_producto.php?error_message=Ingrese todos los datos!');
