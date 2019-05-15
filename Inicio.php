@@ -9,7 +9,8 @@ include('common/utils.php');
 	<title>Inicio</title>
 </head>
 <body>
-	<h1>Bienvenido <?php echo $_SESSION['username']['Usuario']; ?>
+    <h1>(❍ᴥ❍ʋ)</h1>
+	<h1>Bienvenido<?php echo $_SESSION['username']['Usuario']; ?>
     </h1>
     <br>
     <h2>Nombre de la tienda: <?php echo $_SESSION['name']['Nombre_de_Tienda']; ?>
